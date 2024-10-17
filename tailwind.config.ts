@@ -13,6 +13,16 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
     },
+    colors: {
+      white: "#ffffff",
+      black: "#000000",
+      primary: "#ECC053",
+      secondary: "#7174AB",
+      yellow: {
+        800: "#AC821B",
+      },
+      lightBackground: "#FDF9EF",
+    },
   },
   plugins: [],
 };
