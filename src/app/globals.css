@@ -21,6 +21,10 @@ body {
   font-size: 15px;
 }
 
+a {
+  @apply text-secondary font-semibold;
+}
+
 h1,
 h2,
 h3,
@@ -56,4 +60,52 @@ h4 {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Blink animation */
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* fly-in animation */
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(40%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.fly-in {
+  animation: slideInFromRight 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.fly-in-delay {
+  animation: slideInFromRight 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* fade-in animation */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }

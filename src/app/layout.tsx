@@ -4,7 +4,7 @@ import "./globals.css";
 
 // Main font
 const FontUrbanist = Urbanist({
-  weight: ["300"],
+  weight: ["300", "600"],
   subsets: ["latin"],
   variable: "--font-urbanist",
 });
