@@ -1,6 +1,16 @@
 import Skill from "@/components/about/Skill";
 import { Skill as SkillType } from "@/types";
 
+export default function Skills() {
+  return (
+    <div className="flex flex-wrap gap-x-14 gap-y-8 max-w-[950px] mx-auto justify-center">
+      {SKILL_LIST.map((skill) => (
+        <Skill skill={skill} />
+      ))}
+    </div>
+  );
+}
+
 const SKILL_LIST: SkillType[] = [
   {
     name: "JavaScript",
@@ -82,19 +92,9 @@ const SKILL_LIST: SkillType[] = [
     years: 2,
     logo: "git.svg",
   },
-  {
-    name: "Supabase",
-    years: 1,
-    logo: "supabase.svg",
-  },
+  // {
+  //   name: "Supabase",
+  //   years: 1,
+  //   logo: "supabase.svg",
+  // },
 ];
-
-export default function Skills() {
-  return (
-    <div className="flex flex-wrap gap-x-14 gap-y-8 max-w-[950px] mx-auto justify-center">
-      {SKILL_LIST.map((skill) => (
-        <Skill skill={skill} />
-      ))}
-    </div>
-  );
-}

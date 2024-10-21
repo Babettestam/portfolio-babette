@@ -3,6 +3,7 @@ import profilePic from "/public/images/babette-1.png";
 import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import About from "@/components/about/About";
+import Work from "@/components/work/Work";
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
       </main>
 
       <About />
+      <Work />
     </>
   );
 }

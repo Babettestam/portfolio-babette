@@ -20,12 +20,6 @@ export default function Header() {
               </div>
               <Menu />
             </div>
-
-            {/* <div className="absolute right-4 md:right-0">
-              <Link href="/auth/login" className="btn-yellow-300">
-                Login
-              </Link>
-            </div> */}
           </div>
         </div>
       </div>
