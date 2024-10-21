@@ -22,6 +22,10 @@ body {
 }
 
 a {
+  @apply cursor-pointer;
+}
+
+.styled-link {
   @apply text-secondary font-semibold;
 }
 
@@ -62,6 +66,10 @@ h4 {
   }
 }
 
+.responsive-grid {
+  @apply grid-cols-base md:grid-cols-baseMd xl:grid-cols-baseXl;
+}
+
 /* Blink animation */
 
 .blink {
@@ -90,6 +98,24 @@ h4 {
 
 .fly-in-delay {
   animation: slideInFromRight 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* fly-in animation */
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.fly-in-top {
+  animation: slideInFromTop 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 /* fade-in animation */

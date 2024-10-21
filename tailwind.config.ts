@@ -12,6 +12,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      gridTemplateColumns: {
+        base: "5% auto 5%",
+        baseMd: "10% auto 10%",
+        baseXl: "15% auto 15%",
+      },
     },
     colors: {
       white: "#ffffff",

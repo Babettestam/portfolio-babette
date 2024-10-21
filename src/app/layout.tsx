@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Libre_Baskerville, Urbanist } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 // Main font
 const FontUrbanist = Urbanist({
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body
         className={`${FontUrbanist.variable} ${FontLibreBaskerville.variable}`}
       >
+        <Header />
         {children}
       </body>
     </html>
