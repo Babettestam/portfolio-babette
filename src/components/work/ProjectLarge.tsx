@@ -2,6 +2,7 @@
 
 import Tippy from "@tippyjs/react";
 import Image from "next/image";
+import Link from "next/link";
 import React, { PropsWithChildren } from "react";
 
 interface Technique {
@@ -15,6 +16,7 @@ interface Props {
   image: string; // URL of the image
   order: number;
   totalProjects: number;
+  link: string;
 }
 
 const ProjectLarge: React.FC<PropsWithChildren<Props>> = ({
@@ -24,9 +26,14 @@ const ProjectLarge: React.FC<PropsWithChildren<Props>> = ({
   image,
   order,
   totalProjects,
+  link,
 }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center bg-fade-blue rounded-3xl relative p-10 text-left">
+    <Link
+      href={link}
+      target="_blank"
+      className="flex flex-col md:flex-row items-center bg-fade-blue rounded-3xl relative p-10 text-left hover-extend"
+    >
       <div className="absolute right-6 top-5">
         <div className="flex flex-col items-center justify-center text-white ">
           <h2 className="text-4xl opacity-80">
@@ -40,7 +47,7 @@ const ProjectLarge: React.FC<PropsWithChildren<Props>> = ({
 
       <div className="flex flex-col md:flex-row w-full md:gap-10 md:items-center max-h-full">
         <div className="md:w-1/2 flex justify-center p-4 ">
-          <Image src={image} alt={title} width={500} height={275} />
+          <Image src={image} alt={title} width={550} height={300} />
         </div>
 
         <div className="md:w-1/2 flex flex-col gap-2 text-white justify-center">
@@ -64,7 +71,7 @@ const ProjectLarge: React.FC<PropsWithChildren<Props>> = ({
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

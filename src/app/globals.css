@@ -86,6 +86,10 @@ p {
   @apply grid-cols-base md:grid-cols-baseMd xl:grid-cols-baseXl;
 }
 
+.hover-extend {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
 /* Blink animation */
 
 .blink {
