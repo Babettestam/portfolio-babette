@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 
 export default function Contact() {
   return (
-    <div className="grid responsive-grid py-40 mb-40" id="about">
+    <div className="grid responsive-grid py-40 mb-40" id="contact">
       <div className="col-start-2 text-center">
         <SlideIn>
           <h2>Contact</h2>
