@@ -13,7 +13,7 @@ export default function Skill({ skill: { logo, name, years } }: Props) {
   return (
     <Tippy content={name}>
       <div className="flex gap-2">
-        <div className="bg-lightBackground w-[90px] h-[90px] flex justify-center items-center rounded-md">
+        <div className="bg-lightBackground w-[70px] h-[70px] md:w-[90px] md:h-[90px] p-5 flex justify-center items-center rounded-md">
           <Image
             src={`logos/${logo}`}
             alt={`${name} logo`}
