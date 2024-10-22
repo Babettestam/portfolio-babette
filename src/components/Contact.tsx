@@ -13,9 +13,9 @@ export default function Contact() {
         <SlideIn>
           <h2>Contact</h2>
           <h3 className="mt-5">Get in touch</h3>
-          <p className="max-w-[500px] text-justify mx-auto my-10">
+          <p className="max-w-[490px] text-justify mx-auto my-10">
             Feel free to contact me about job opportunities or freelance
-            assignments.
+            assignments. Or just to connect.
           </p>
 
           <div className="flex flex-col md:flex-row gap-4 justify-center align-center">
@@ -32,7 +32,11 @@ export default function Contact() {
                   <div className="max-w-[400px] cursor-pointer">
                     <CopyToClipboard
                       text={content}
-                      onCopy={() => window.open(content, "_blank")}
+                      onCopy={() =>
+                        externalLink
+                          ? window.open(content, "_blank")
+                          : toast.success("Copied to clipboard")
+                      }
                     >
                       <div className="flex flex-row items-center gap-4 text-left">
                         <div className="bg-neutral-700 text-white rounded-lg w-16 h-16  flex items-center justify-center overflow-hidden transition-all hover-extend">
