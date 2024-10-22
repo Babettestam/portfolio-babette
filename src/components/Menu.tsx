@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Menu() {
   return (
     <div className="hidden gap-8 md:flex">
-      <Link className="hover:underline" href="#home">
+      <Link className="hover:underline" href="#main">
         Home
       </Link>
       <Link className="hover:underline" href="#about">
@@ -12,7 +12,7 @@ export default function Menu() {
       <Link className="hover:underline" href="#work">
         Recent work
       </Link>
-      <Link className="hover:underline btn" href="#work">
+      <Link className="hover:underline btn" href="#contact">
         Contact
       </Link>
     </div>

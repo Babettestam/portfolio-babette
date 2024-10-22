@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Libre_Baskerville, Urbanist } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import { Toaster } from "react-hot-toast";
 
 // Main font
 const FontUrbanist = Urbanist({
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body
         className={`${FontUrbanist.variable} ${FontLibreBaskerville.variable}`}
       >
+        <Toaster position="bottom-center" />
         <Header />
         {children}
       </body>

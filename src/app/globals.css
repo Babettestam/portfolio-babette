@@ -14,11 +14,17 @@
   }
 }
 
+html {
+  @apply transition-all;
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-urbanist), Arial, Helvetica, sans-serif;
   font-size: 15px;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -87,7 +93,7 @@ p {
 }
 
 .hover-extend {
-  @apply transition-transform duration-300 hover:scale-105;
+  @apply transition-transform duration-300 hover:scale-[102%];
 }
 
 /* Blink animation */

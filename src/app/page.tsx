@@ -4,11 +4,15 @@ import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import About from "@/components/about/About";
 import Work from "@/components/work/Work";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
     <>
-      <main className="grid grid-cols-12 gap-4 my-20 md:my-80">
+      <main
+        className="grid grid-cols-12 gap-4 py-20 md:pt-80 md:pb-40"
+        id="main"
+      >
         <div className="col-start-1 col-end-13 md:col-end-4 xl:col-start-3 xl:col-end-6 max-w-[450px] mt-20 pl-4 xl:pl-0">
           <h3>Hello, my name is</h3>
           <h1>Babette Stam</h1>
@@ -43,6 +47,7 @@ export default function Home() {
 
       <About />
       <Work />
+      <Contact />
     </>
   );
 }

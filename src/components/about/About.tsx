@@ -3,7 +3,7 @@ import SlideIn from "@/components/SlideIn";
 
 export default function About() {
   return (
-    <div className="grid responsive-grid pb-40">
+    <div className="grid responsive-grid py-40" id="about">
       <div className="col-start-2 text-center">
         <SlideIn>
           <h2>About me</h2>

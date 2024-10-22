@@ -11,22 +11,20 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        white: "#ffffff",
+        black: "#000000",
+        primary: "#ECC053",
+        secondary: "#7174AB",
+        yellow: {
+          800: "#AC821B",
+        },
+        lightBackground: "#FDF9EF",
       },
       gridTemplateColumns: {
         base: "5% auto 5%",
         baseMd: "10% auto 10%",
         baseXl: "15% auto 15%",
       },
-    },
-    colors: {
-      white: "#ffffff",
-      black: "#000000",
-      primary: "#ECC053",
-      secondary: "#7174AB",
-      yellow: {
-        800: "#AC821B",
-      },
-      lightBackground: "#FDF9EF",
     },
     // borderRadius: {
     //   none: "0",
