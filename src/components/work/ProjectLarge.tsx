@@ -38,18 +38,12 @@ const ProjectLarge: React.FC<PropsWithChildren<Props>> = ({
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row w-full md:gap-10">
-        <div className="w-1/2 flex justify-center mb-4 md:mb-0 p-4">
-          <Image
-            src={image}
-            alt={title}
-            className="max-w-full"
-            width={800}
-            height={600}
-          />
+      <div className="flex flex-col md:flex-row w-full md:gap-10 md:items-center max-h-full">
+        <div className="md:w-1/2 flex justify-center p-4 ">
+          <Image src={image} alt={title} width={500} height={275} />
         </div>
 
-        <div className="w-1/2 flex flex-col gap-2 text-white justify-center">
+        <div className="md:w-1/2 flex flex-col gap-2 text-white justify-center">
           <h4 className="text-2xl">{title}</h4>
 
           <div className="mb-4 max-w-96 text-justify">{children}</div>
