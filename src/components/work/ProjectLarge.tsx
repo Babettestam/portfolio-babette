@@ -1,6 +1,7 @@
 "use client";
 
 import Tippy from "@tippyjs/react";
+import Image from "next/image";
 import React, { PropsWithChildren } from "react";
 
 interface Technique {
@@ -26,7 +27,6 @@ const ProjectLarge: React.FC<PropsWithChildren<Props>> = ({
 }) => {
   return (
     <div className="flex flex-col md:flex-row items-center bg-fade-blue rounded-3xl relative p-10 text-left">
-      {/* Order number and title */}
       <div className="absolute right-6 top-5">
         <div className="flex flex-col items-center justify-center text-white ">
           <h2 className="text-4xl opacity-80">
@@ -39,9 +39,14 @@ const ProjectLarge: React.FC<PropsWithChildren<Props>> = ({
       </div>
 
       <div className="flex flex-col md:flex-row w-full md:gap-10">
-        {/* Image section */}
-        <div className="w-1/2 flex justify-center mb-4 md:mb-0">
-          <img src={image} alt={title} className="max-w-full" />
+        <div className="w-1/2 flex justify-center mb-4 md:mb-0 p-4">
+          <Image
+            src={image}
+            alt={title}
+            className="max-w-full"
+            width={800}
+            height={600}
+          />
         </div>
 
         <div className="w-1/2 flex flex-col gap-2 text-white justify-center">
@@ -49,14 +54,17 @@ const ProjectLarge: React.FC<PropsWithChildren<Props>> = ({
 
           <div className="mb-4 max-w-96 text-justify">{children}</div>
 
-          {/* Techniques */}
           <div className="flex flex-wrap gap-4">
             {techniques.map((tech, index) => (
               <div key={index} className="flex items-center gap-2">
                 <Tippy content={tech.name}>
-                  <img src={tech.logo} alt={tech.name} className="w-14 h-14" />
+                  <Image
+                    src={tech.logo}
+                    alt={tech.name}
+                    width={55}
+                    height={55}
+                  />
                 </Tippy>
-                {/* <span>{tech.name}</span> */}
               </div>
             ))}
           </div>

@@ -24,8 +24,8 @@ export default function Skill({ skill: { logo, name, years } }: Props) {
         <div className="flex flex-col gap-2 items-center justify-center w-20">
           <h5 className="font-bold text-lg">{years} years</h5>
           <div className="flex flex-wrap gap-1 max-w-[45px]">
-            {[...Array(years)].map(() => (
-              <div className="bg-primary w-2 h-2 rounded-full" />
+            {[...Array(years)].map((_, index) => (
+              <div className="bg-primary w-2 h-2 rounded-full" key={index} />
             ))}
           </div>
         </div>

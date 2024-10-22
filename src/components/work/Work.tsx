@@ -1,10 +1,11 @@
 import SlideIn from "@/components/SlideIn";
 import ProjectLarge from "@/components/work/ProjectLarge";
+// import ProjectSmall from "@/components/work/ProjectSmall";
 
 const techniquesExample = [
-  { logo: "logos/react.svg", name: "React" },
-  { logo: "logos/nextjs.svg", name: "Next.js" },
-  { logo: "logos/tailwindcss.svg", name: "TailwindCSS" },
+  { logo: "/logos/react.svg", name: "React" },
+  { logo: "/logos/nextjs.svg", name: "Next.js" },
+  { logo: "/logos/tailwindcss.svg", name: "TailwindCSS" },
   // { logo: "/path/to/vercel.svg", name: "Vercel" },
 ];
 
@@ -15,7 +16,7 @@ export default function Work() {
     <div className="grid responsive-grid pb-40 pt-10">
       <div className="col-start-2 text-center">
         <SlideIn>
-          <h2>My Recent Work</h2>
+          <h2 className="mb-4">My Recent Work</h2>
         </SlideIn>
         <SlideIn>
           <ProjectLarge
@@ -40,6 +41,27 @@ export default function Work() {
             </div>
           </ProjectLarge>
         </SlideIn>
+        {/* <SlideIn>
+          <div className="flex gap-4">
+            <ProjectSmall
+              title="BonScanAI"
+              content={<p>Scan your invoices and we do the rest...</p>}
+              techniques={techniquesExample}
+              image="images/bonscanai.png"
+              order={2}
+              totalProjects={TOTAL_PROJECTS}
+            />
+
+            <ProjectSmall
+              title="SB Maint"
+              content={<p>SB Maint helps you manage maintenance work...</p>}
+              techniques={techniquesExample}
+              image="images/sbmaint.png"
+              order={3}
+              totalProjects={TOTAL_PROJECTS}
+            />
+          </div>
+        </SlideIn> */}
       </div>
     </div>
   );
