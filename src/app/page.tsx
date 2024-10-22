@@ -8,8 +8,8 @@ import Work from "@/components/work/Work";
 export default function Home() {
   return (
     <>
-      <main className="grid grid-cols-12 gap-4 my-80">
-        <div className="col-start-1 col-end-4 xl:col-start-3 xl:col-end-6 max-w-[450px] mt-20 pl-4 xl:pl-0">
+      <main className="grid grid-cols-12 gap-4 my-20 md:my-80">
+        <div className="col-start-1 col-end-13 md:col-end-4 xl:col-start-3 xl:col-end-6 max-w-[450px] mt-20 pl-4 xl:pl-0">
           <h3>Hello, my name is</h3>
           <h1>Babette Stam</h1>
           <p>
@@ -25,7 +25,7 @@ export default function Home() {
             <ArrowRightIcon className="size-4 group-hover:ml-2 transition-all" />
           </Link>
         </div>
-        <div className="col-start-7 col-end-13 xl:col-start-7 xl:col-end-13">
+        <div className="col-start-1 md:col-start-7 col-end-13 xl:col-start-7 xl:col-end-13 overflow-hidden">
           <div className="relative">
             <div className="z-0 absolute bg-lightBackground w-full h-80 bottom-5 rounded-l-full fly-in" />
             <div className="z-0 absolute bg-primary w-[90%] h-72 bottom-0 right-0 rounded-l-full fly-in-delay" />
