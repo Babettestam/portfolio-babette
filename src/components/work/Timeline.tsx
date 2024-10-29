@@ -1,4 +1,3 @@
-// Timeline.tsx
 import SlideIn from "@/components/SlideIn";
 import { TIMELINE_LIST } from "@/data/timelineData";
 import React from "react";
@@ -28,8 +27,8 @@ const Timeline: React.FC = () => {
                   {item.year}
                 </h5>
               </SlideIn>
-              <span className="bg-yellow-300 top-2 absolute left-0 md:left-1/2 h-full w-[2px] group-last:hidden ml-2" />
-              <span className="absolute  top-2 left-0 h-4 w-4 border-2 border-yellow-300 rounded-full bg-primary md:left-1/2" />
+              <span className="bg-yellow-300 top-1 absolute left-0 md:left-1/2 h-full w-[2px] group-last:hidden ml-2" />
+              <span className="absolute  top-1 left-0 h-4 w-4 border-2 border-yellow-300 rounded-full bg-primary md:left-1/2" />
 
               <SlideIn
                 side={isEven(index) ? "RIGHT" : "LEFT"}
@@ -44,7 +43,6 @@ const Timeline: React.FC = () => {
                 </p>
               </SlideIn>
             </div>
-            // </SlideIn>
           ))}
         </div>
       </div>
