@@ -14,42 +14,18 @@ interface Props {
   title: string;
   techniques: Technique[];
   image: string; // URL of the image
-  order: number;
-  totalProjects: number;
-  backgroundColor: "blue" | "beige" | "purple";
   link: string;
 }
 
-const ProjectSmall: React.FC<Props> = ({
-  title,
-  techniques,
-  image,
-  order,
-  totalProjects,
-  backgroundColor,
-  link,
-}) => {
-  const bgClass = `bg-fade-${backgroundColor}`;
-
+const ProjectSmall: React.FC<Props> = ({ title, techniques, image, link }) => {
   return (
     <Link
       href={link}
       target="_blank"
-      className={`flex flex-col w-full items-center text-center text-white rounded-3xl relative p-10 ${bgClass} hover-extend`}
+      className={`flex flex-col w-full items-center text-center rounded-3xl relative p-10 border border-neutral-200 hover-extend`}
     >
-      <div className="absolute right-6 top-5">
-        <div className="flex flex-col items-center justify-center text-white">
-          <h2 className="text-4xl opacity-80">
-            {order.toString().padStart(2, "0")}
-          </h2>
-          <h5 className="opacity-40 text-lg">
-            / {totalProjects.toString().padStart(2, "0")}
-          </h5>
-        </div>
-      </div>
-
       <div className="flex flex-col justify-between h-full w-full max-h-full">
-        <h4 className="text-2xl">{title}</h4>
+        <h4 className="text-2xl font-bold">{title}</h4>
         <div className="flex justify-center p-4 ">
           <Image src={image} alt={title} width={500} height={275} />
         </div>

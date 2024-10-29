@@ -2,8 +2,6 @@ import SlideIn from "@/components/SlideIn";
 import ProjectLarge from "@/components/work/ProjectLarge";
 import ProjectSmall from "@/components/work/ProjectSmall";
 
-const TOTAL_PROJECTS = 3;
-
 export default function Work() {
   return (
     <div className="grid responsive-grid pb-40 pt-10" id="work">
@@ -23,8 +21,6 @@ export default function Work() {
                 { logo: "/logos/supabase.svg", name: "Supabase" },
               ]}
               image="/images/endpointy.png"
-              order={1}
-              totalProjects={TOTAL_PROJECTS}
               link="https://endpointy.io"
             >
               <div>
@@ -55,9 +51,6 @@ export default function Work() {
                   { logo: "/logos/supabase.svg", name: "Supabase" },
                 ]}
                 image="/images/bonscanai.png"
-                order={2}
-                totalProjects={TOTAL_PROJECTS}
-                backgroundColor="beige"
                 link="https://bonscanai.nl"
               />
 
@@ -68,9 +61,6 @@ export default function Work() {
                   { logo: "/logos/elementor.png", name: "Elementor" },
                 ]}
                 image="/images/sbmaint.png"
-                order={3}
-                totalProjects={TOTAL_PROJECTS}
-                backgroundColor="purple"
                 link="https://sbmaint.nl"
               />
             </div>

@@ -17,8 +17,8 @@ export default function Home() {
           <h3>Hello, my name is</h3>
           <h1>Babette Stam</h1>
           <p>
-            I&apos;m an passionate creative developer, with 7+ years of industry
-            experience as a front-end&apos;er.{" "}
+            I&apos;m an passionate creative developer, with 8+ years of
+            professional experience as a front-end&apos;er.{" "}
           </p>
           <Link
             href="#contact"

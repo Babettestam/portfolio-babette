@@ -14,12 +14,12 @@ export default function Skills() {
 const SKILL_LIST: SkillType[] = [
   {
     name: "JavaScript",
-    years: 8,
+    years: 10,
     logo: "javascript.svg",
   },
   {
     name: "Git",
-    years: 8,
+    years: 10,
     logo: "git.svg",
   },
   {
