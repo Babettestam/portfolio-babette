@@ -4,12 +4,12 @@ import ProjectSmall from "@/components/work/ProjectSmall";
 
 export default function Work() {
   return (
-    <div className="grid responsive-grid pb-40 pt-10" id="work">
+    <div className="grid responsive-grid pb-60 pt-10" id="work">
       <div className="col-start-2 text-center">
         <SlideIn>
-          <h2 className="mb-4">My Recent Work</h2>
+          <h2 className="mb-20">My Recent Work</h2>
         </SlideIn>
-        <div className="flex flex-col gap-y-5">
+        <div className="flex flex-col gap-y-10">
           <SlideIn>
             <ProjectLarge
               title="EndPointy.io"
@@ -39,7 +39,7 @@ export default function Work() {
             </ProjectLarge>
           </SlideIn>
           <SlideIn>
-            <div className="flex flex-col gap-5 md:flex-row w-full">
+            <div className="flex flex-col gap-10 md:flex-row w-full">
               <ProjectSmall
                 title="BonScanAI"
                 techniques={[
