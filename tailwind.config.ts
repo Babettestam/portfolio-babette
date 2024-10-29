@@ -16,6 +16,7 @@ const config: Config = {
         primary: "#ECC053",
         secondary: "#7174AB",
         yellow: {
+          300: "#F4EAD1",
           800: "#AC821B",
         },
         lightBackground: "#FDF9EF",

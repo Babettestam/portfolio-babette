@@ -5,6 +5,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import About from "@/components/about/About";
 import Work from "@/components/work/Work";
 import Contact from "@/components/Contact";
+import Timeline from "@/components/work/Timeline";
 
 export default function Home() {
   return (
@@ -47,6 +48,7 @@ export default function Home() {
 
       <About />
       <Work />
+      <Timeline />
       <Contact />
     </>
   );

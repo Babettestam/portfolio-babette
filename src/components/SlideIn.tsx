@@ -5,9 +5,16 @@ import React, { useRef, useState, useEffect } from "react";
 interface SlideInProps {
   children: React.ReactNode;
   threshold?: number;
+  side?: "RIGHT" | "LEFT";
+  className?: string;
 }
 
-const SlideIn: React.FC<SlideInProps> = ({ children, threshold = 0.35 }) => {
+const SlideIn: React.FC<SlideInProps> = ({
+  children,
+  threshold = 0.35,
+  side,
+  className,
+}) => {
   const ref = useRef<HTMLDivElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -35,10 +42,17 @@ const SlideIn: React.FC<SlideInProps> = ({ children, threshold = 0.35 }) => {
     };
   }, [threshold]);
 
+  const sideClass =
+    side === "RIGHT"
+      ? "slide-in-visible-right"
+      : side === "LEFT"
+      ? "slide-in-visible-left"
+      : "slide-in-visible";
+
   return (
     <div
       ref={ref}
-      className={`slide-in ${isVisible ? "slide-in-visible" : ""}`}
+      className={`slide-in ${isVisible ? sideClass : ""} ${className}`}
     >
       {children}
     </div>
