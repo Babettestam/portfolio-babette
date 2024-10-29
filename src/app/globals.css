@@ -69,18 +69,6 @@ p {
   }
 }
 
-.bg-fade-blue {
-  background: linear-gradient(180deg, #67698b 0%, #a8a9be 100%);
-}
-
-.bg-fade-beige {
-  background: linear-gradient(180deg, #d7d0af 0%, #f2ebdc 100%);
-}
-
-.bg-fade-purple {
-  background: linear-gradient(180deg, #8b6786 0%, #bda8be 100%);
-}
-
 .responsive-grid {
   @apply grid-cols-base md:grid-cols-baseMd xl:grid-cols-baseXl;
 }
