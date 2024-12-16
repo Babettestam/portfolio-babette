@@ -1,7 +1,7 @@
 import Image from "next/image";
 import profilePic from "/public/images/babette-1.png";
-import Link from "next/link";
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
+// import Link from "next/link";
+// import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import About from "@/components/about/About";
 import Work from "@/components/work/Work";
 import Contact from "@/components/Contact";
@@ -21,14 +21,14 @@ export default function Home() {
             I&apos;m an passionate creative developer, with 8+ years of
             professional experience as a front-end&apos;er.{" "}
           </p>
-          <Link
+          {/* <Link
             href="#contact"
             className="styled-link group flex gap-3 items-center mt-10 cursor-pointer"
           >
             <span className="w-3 h-3 blink bg-secondary rounded-full" />
             Available for work{" "}
             <ArrowRightIcon className="size-4 group-hover:ml-2 transition-all" />
-          </Link>
+          </Link> */}
         </div>
         <div className="col-start-1 md:col-start-7 col-end-13 xl:col-start-7 xl:col-end-13 overflow-hidden">
           <div className="relative">
