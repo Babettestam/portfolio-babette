@@ -23,17 +23,24 @@ export const TIMELINE_LIST: TimelineItem[] = [
       "As a senior frontend developer I was really able to put my years of programming knowledge into helping Beequip to the next level. I have worked here with the following tech-stack: React, Next.js, Typescript, Apollo/GraphQL, styled-components, Jest and Cypress.",
   },
   {
-    year: "2023 / now",
+    year: "2023 / 2025",
     company: "TimmerStam",
     position: "Founder & Furniture Maker",
     description:
-      "Since I have been a full-time developer since my studies I felt it was a nice time to try something completely different. I started my own furniture and handywoman business. I had an amazing time and learned so much. Not only in the “work” itself, but also about owning a business, marketing, design and self development. TimmerStam is a side-project where I work on in the weekends. ",
+      "Since I have been a full-time developer since my studies I felt it was a nice time to try something completely different. I started my own furniture and handywoman business. I had an amazing time and learned so much. Not only in the “work” itself, but also about owning a business, marketing, design and self development.  ",
   },
   {
     year: "2019 / now",
     company: "Stam Codes",
     position: "Full-Stack Developer",
     description:
-      "Since 2019, I have owned my own development company, 'Stam Codes.' I love fun challenges and enjoy working on creative projects myself, as it allows me to continue developing my own skills.",
+      "Since 2019, I have owned my own development company, 'Stam Codes.' I love fun challenges and enjoy working on creative projects myself, as it gives me the opportunity to try out new techniques and expand my skills.",
+  },
+  {
+    year: "Jan 2025 / now",
+    company: "Tournify",
+    position: "Javascript Developer",
+    description:
+      "Tournify is an app for organizing sports tournaments. I work here as a Javascript developer and I am mainly responsible for the React Native application. I work with the following technologies: Next.js, React Native, React, Typescript, Tailwind, Nativewind, Supabase, Jest and Playwright.",
   },
 ];
